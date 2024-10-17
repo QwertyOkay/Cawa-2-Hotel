@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neem contact met ons op</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="icon" href="./img/hero-img-desk.webp" type="image/x-icon" />
+  <meta name="description"
+    content="Ontdek de beste zorgvuldig geselecteerde hotels voor een onvergetelijke vakantie in pittoreske omgevingen met placeforrest.com. Wij bieden luxe, comfort en gastvrijheid van topklasse." />
+  <meta name="keywords"
+    content="luxe hotels, hotelreservering, vakantie, comfort, luxe, gastvrijheid, placeforrest, hotel in Den Haag, hotel in Nederland" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="placeforrest.com" />
+  <meta name="language" content="nl" />
+  <link rel="canonical" href="https://placeforrest.com" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <nav class="nav-header">
+        <a href="./" class="header-link link">placeforrest</a>
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a href="./terms.html" class="nav-link link">Instructies</a>
+          </li>
+          <li class="nav-item">
+            <a href="./#hot-deals" class="nav-link link">Warme aanbiedingen</a>
+          </li>
+          <li class="nav-item">
+            <a href="./#reviews" class="nav-link link">Beoordelingen</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contacts.html" rel="noreferrer noopener" class="nav-link link">Contacten</a>
+          </li>
+        </ul>
+        <button type="button" class="header-button js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+          <svg width="24" height="24" class="header-svg">
+            <use href="./img/mob-menu-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-wrapper page-content">
+    <section class="hero-contact">
+      <div class="container" style="width: 100%; max-width: 610px">
+        <h1 class="subtitle-content">
+          Contáctanos
+          <span class="span">placeforrest.com</span>
+        </h1>
+        <p class="text-content">
+          Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas
+          más información, no dudes en ponerte en contacto con nosotros a
+          través de los siguientes medios.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-container">
+        <div class="about-img-thumb">
+          <picture>
+            <source media="(max-width: 833px)" srcset="./img/about-img.webp" />
+            <source media="(min-width: 834px)" srcset="./img/about-img-desk.webp" />
+            <img loading="lazy" src="./img/about-img.webp" alt="Опис зображення" class="about-wrapper-img" />
+          </picture>
+        </div>
+        <div class="about-content">
+          <span class="subtitle">O nas</span>
+          <h2 class="main-title">
+            Przytulność i komfort w atmosferze luksusu i gościnności
+          </h2>
+          <p class="main-text">
+            Witamy na naszej stronie internetowej, na której znajdziesz
+            najlepsze hotele na niezapomniane wakacje! Oferujemy starannie
+            wyselekcjonowane hotele, które łączą w sobie komfort, luksus i
+            gościnność, abyś mógł w pełni cieszyć się pobytem. Jeśli szukasz
+            miejsca, w którym możesz się zrelaksować i cieszyć wyjątkową
+            atmosferą, trafiłeś we właściwe miejsce. Nasze hotele położone są
+            w malowniczych lokalizacjach, zapewniają wysoki poziom usług i
+            zaspokoją nawet najbardziej wymagające oczekiwania. Zarezerwuj
+            swoje idealne wakacje już teraz!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-container">
+        <h1 class="subtitle subtitle2" style="margin-bottom: 20px;">Neem contact met ons op</h1>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Naam:</label>
+          <input type="text" id="name" name="name" required placeholder="Naam" />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="E-mail" />
+
+          <label for="message">Bericht:</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Bericht"></textarea>
+
+          <button type="submit" class="main-link">Te verzenden</button>
+        </form>
+      </div>
+
+      <div class="modal" id="thankYouModal">
+        <div class="modal-content">
+          <p>Bedankt voor het contact!We zullen binnenkort met u communiceren.</p>
+          <button id="closeModal" class="main-link">Te sluiten</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="subtitle-content">Contactgegevens</h2>
+        <ul class="content-list">
+          <li>Taple: +31 70 200 12 34</li>
+          <li>
+            E-mail:
+            <a href="mailto:contact@placeforrest.nl">contact@placeforrest.nl</a>
+          </li>
+          <li>Adres: 427 S Margrietstraat 1 155, Den Haag, Países Bajos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="subtitle-content">Vind ons op de kaart</h2>
+        <div class="map-container" style="border: 0; display: flex; justify-content: center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9962343127063!2d4.300302!3d52.070498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b7456789abc!2s427+S+Margrietstraat+1%2C+Den+Haag%2C+Pa%C3%ADses+Bajos!5e0!3m2!1ses!2sus!4v1697040400000!5m2!1ses!2sus"
+            height="450" style="
+            border: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+          " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <h2 class="footer-title">placeforrest</h2>
+      <nav>
+        <ul class="footer-nav-list">
+          <li>
+            <p class="footer-nav-text">Nuttige links</p>
+            <a href="./#hot-deals" class="footer-nav-link">Hotels</a>
+          </li>
+          <li>
+            <p class="footer-nav-text">Privacy</p>
+            <ul>
+              <li>
+                <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookie File Policy</a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">Privacybeleid</a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Regels en voorwaarden</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="footer-nav-text">Heeft u een vraag?</p>
+            <ul>
+              <li>
+                <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookie File Policy</a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">Privacybeleid</a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Statuut</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="footer-text-list">
+        <li>
+          <p>Madison Salen 101</p>
+        </li>
+        <li>
+          <address>427 S Margrietstraat 1 155, Den Haag</address>
+        </li>
+        <li>
+          <a href="tel:+31702001234">+31 70 200 12 34</a>
+        </li>
+        <li>
+          <a href="mailto:info@placeforrest.nl">info@placeforrest.nl</a>
+        </li>
+      </ul>
+
+      <ul class="footer-icon-list">
+        <li class="footer-icon-item">
+          <p class="footer-thumb">+18</p>
+        </li>
+        <li class="footer-icon-item">
+          <a href="https://www.gamcare.org.uk/" rel="noreferrer noopener"><img src="./img/footer-link.webp"
+              alt="logo gamcare" /></a>
+        </li>
+        <li class="footer-icon-item">
+          <a href=" https://www.gambleaware.org/" rel="noreferrer noopener"><img src="./img/BeGamble.webp"
+              alt="logo gambleaware" /></a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Copyright ©2024 All rCopyright ©2024 Wszelkie prawa zastrzeżone
+      </p>
+    </div>
+  </footer>
+
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="mobile-menu-wrapper">
+      <a href="./" class="mob-link link">placeforrest</a>
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg width="24" height="24">
+          <use href="./img/mob-menu-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav>
+      <ul class="footer-nav-list">
+        <li>
+          <p class="footer-nav-text mob-text">Nuttige links</p>
+          <a href="#hot-deals" class="footer-nav-link">Hotels</a>
+        </li>
+        <li>
+          <p class="footer-nav-text mob-text">Privacy</p>
+          <ul>
+            <li>
+              <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookie File Policy</a>
+            </li>
+            <li>
+              <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">Privacybeleid</a>
+            </li>
+            <li>
+              <a href="./terms.html" rel="noreferrer noopener" class="footer-nav-link">Regels en voorwaarden</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-nav-text mob-text">Heeft u nog vragen?</p>
+          <ul>
+            <li>
+              <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookiesbeleid
+              </a>
+            </li>
+            <li>
+              <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">
+                Privacybeleid</a>
+            </li>
+            <li>
+              <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Statuut</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/contacts-form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{
+  "hotels": [
+    {
+      "name": "Mercure Den Haag Centrum",
+      "price": "€158,00 per nacht",
+      "recenzi": "⭐️⭐️⭐️⭐️⭐️ 123 beoordelingen",
+      "image": "../img/hotel-1.jpg"
+    },
+    {
+      "name": "Hampton by Hilton Amsterdam City Centre",
+      "price": "€94,00 per nacht",
+      "recenzi": "⭐️⭐️⭐️⭐️⭐️ 168 beoordelingen",
+      "image": "../img/hotel-2.jpg"
+    },
+    {
+      "name": "Radisson Blu Hotel, Rotterdam",
+      "price": "€144,00 per nacht",
+      "recenzi": "⭐️⭐️⭐️⭐️⭐️ 252 beoordelingen",
+      "image": "../img/hotel-3.jpg"
+    },
+    {
+      "name": "Appartementen in De Rotterdam - Rotterdam",
+      "price": "€127,00 per nacht",
+      "recenzi": "⭐️⭐️⭐️⭐️⭐️ 261 beoordelingen",
+      "image": "../img/hotel-4.jpg"
+    },
+    {
+      "name": "Ibis Utrecht Centrum",
+      "price": "€165,00 per nacht",
+      "recenzi": "⭐️⭐️⭐️⭐️⭐️ 193 beoordelingen",
+      "image": "../img/hotel-5.jpg"
+    },
+    {
+      "name": "H15 Luxury Palace, Amsterdam",
+      "price": "€128,00 per nacht",
+      "recenzi": "⭐️⭐️⭐️⭐️⭐️ 310 beoordelingen",
+      "image": "../img/hotel-6.jpg"
+    }
+  ]
+}

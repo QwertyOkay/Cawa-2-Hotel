@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>placeforrest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="icon" href="./img/hero-img-desk.webp" type="image/x-icon" />
+
+  <meta name="description"
+    content="Ontdek de beste zorgvuldig geselecteerde hotels voor een onvergetelijke vakantie in pittoreske omgevingen met placeforrest.com. Wij bieden luxe, comfort en gastvrijheid van topklasse." />
+  <meta name="keywords"
+    content="luxe hotels, hotelreservering, vakantie, comfort, luxe, gastvrijheid, placeforrest, hotel in Den Haag, hotel in Nederland" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="placeforrest.com" />
+  <meta name="language" content="nl" />
+  <link rel="canonical" href="https://placeforrest.com" />
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <nav class="nav-header">
+        <a href="./" class="header-link link">placeforrest</a>
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a href="./terms.html" class="nav-link link">Instructies</a>
+          </li>
+          <li class="nav-item">
+            <a href="./#hot-deals" class="nav-link link">Warme aanbiedingen</a>
+          </li>
+          <li class="nav-item">
+            <a href="./#reviews" class="nav-link link">Beoordelingen</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contacts.html" rel="noreferrer noopener" class="nav-link link">Contacten</a>
+          </li>
+        </ul>
+        <button type="button" class="header-button js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+          <svg width="24" height="24" class="header-svg">
+            <use href="./img/mob-menu-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+
+    <section class="hero">
+      <div class="hero-container">
+        <picture>
+          <source media="(max-width: 833px)" srcset="./img/hero-img-mob.webp" />
+          <source media="(min-width: 834px)" srcset="./img/hero-img-desk.webp" />
+          <img loading="lazy" src="./img/hero-img-desk.webp" alt="Descripción de la imagen" class="hero-img" />
+        </picture>
+        <div class="hotel-form-wrapper">
+          <span class="subtitle">Vind Hotel</span>
+          <h2 class="hotel-form-title main-title">
+            Zoek het ideale hotel voor uw verblijf
+          </h2>
+          <form id="hotel-form" class="hotel-form">
+            <div class="form-group">
+              <label for="guests">Gasten</label>
+              <div class="custom-select-container">
+                <select id="guests" name="guests" class="custom-select">
+                  <option value="1">1 volwassene</option>
+                  <option value="2">2 volwassenen</option>
+                  <option value="3">3 volwassenen</option>
+                  <option value="4">4 volwassenen</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="room">Kamer</label>
+              <div class="custom-select-container">
+                <select id="room" name="room" class="custom-select">
+                  <option value="classic">Klassieke kamer</option>
+                  <option value="deluxe">Luxe kamer</option>
+                  <option value="suite">suite</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="checkin-date">Dicht na</label>
+              <div class="custom-select-container">
+                <input type="date" id="checkin-date" name="checkin-date" value="2024-10-01" class="custom-select" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="checkout-date">Vertrekdatum</label>
+              <div class="custom-select-container">
+                <input type="date" id="checkout-date" name="checkout-date" value="2024-10-07" class="custom-select" />
+              </div>
+            </div>
+            <button type="submit" class="check-availability-btn">
+              Controleer de beschikbaarheid
+            </button>
+          </form>
+          <div id="loading" style="
+                display: none;
+                margin-top: 10px;
+                font-weight: 600;
+                color: var(--accent-color);
+                font-size: 22px;
+                text-align: center;
+              ">
+            Hotels laden...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="subtitle">Welkom bij onze hotels</span>
+        <h2 class="main-title">U zult nooit willen vertrekken</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <div class="services-wrapper">
+              <svg class="services-svg">
+                <use href="./img/symbol-defs.svg#icon-mingcute_service-line"></use>
+              </svg>
+            </div>
+            <h3 class="services-title">Vriendelijke service</h3>
+          </li>
+          <li class="services-item">
+            <div class="services-wrapper">
+              <svg class="services-svg">
+                <use href="./img/symbol-defs.svg#icon-cup"></use>
+              </svg>
+            </div>
+            <h3 class="services-title">Ontbijt</h3>
+          </li>
+          <li class="services-item">
+            <div class="services-wrapper">
+              <svg class="services-svg">
+                <use href="./img/symbol-defs.svg#icon-masaz"></use>
+              </svg>
+            </div>
+            <h3 class="services-title">Massage</h3>
+          </li>
+          <li class="services-item">
+            <div class="services-wrapper">
+              <svg class="services-svg">
+                <use href="./img/symbol-defs.svg#icon-transform"></use>
+              </svg>
+            </div>
+            <h3 class="services-title">Overdrachtsdiensten</h3>
+          </li>
+          <li class="services-item">
+            <div class="services-wrapper">
+              <svg class="services-svg">
+                <use href="./img/symbol-defs.svg#icon-kasyno"></use>
+              </svg>
+            </div>
+            <h3 class="services-title">casino</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-container">
+        <div class="about-img-thumb">
+          <picture>
+            <source media="(max-width: 833px)" srcset="./img/about-img.webp" />
+            <source media="(min-width: 834px)" srcset="./img/about-img-desk.webp" />
+            <img loading="lazy" src="./img/about-img.webp" alt="Descripción de la imagen" class="about-wrapper-img" />
+          </picture>
+        </div>
+        <div class="about-content">
+          <span class="subtitle">Over ons</span>
+          <h2 class="main-title">
+            Comfort en luxe in een gezellige en gastvrije omgeving
+          </h2>
+          <p class="main-text">
+            Welkom op onze website, waar u het beste vindt
+            Hotels voor onvergetelijke vakanties!We bieden een selectie
+            Zorgvuldige hotels die comfort, luxe en gastvrijheid combineren
+            zodat u ten volle geniet van uw verblijf. Als u op zoek bent naar een
+            Plaats om te ontspannen en te genieten van een uitzonderlijke sfeer, u hebt
+            Aangekomen op de juiste site.Onze hotels bevinden zich in
+            pittoreske plaatsen, bieden een hoog serviceniveau en
+            Ze zullen zelfs aan de meest veeleisende verwachtingen voldoen.Boek je
+            Ideale vakanties nu!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hot-deals">
+      <div class="container">
+        <span class="subtitle">Onze hotels</span>
+        <h2 class="main-title">Ontdek luxe en comfort</h2>
+        <ul class="hotel-list" id="our-hotel"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="subtitle">Foto's</span>
+        <h2 class="main-title">Galerij</h2>
+        <ul class="gallery-list" id="gallery-list"></ul>
+      </div>
+    </section>
+
+    <section class="section finder-section" id="hotel-section">
+      <div class="container">
+        <div class="finder-container">
+          <h2 class="finder-title">
+            Kunt u het juiste hotel niet vinden?
+          </h2>
+          <p class="finder-text">
+            Als u het ideale hotel voor uw reis niet kunt vinden, niet
+            zich zorgen maken!Ons team is klaar om u te helpen.Gewoon
+            Vind op uw voorkeuren en wij helpen u de
+            Ideale plek voor uw verblijf.Uw perfecte vakanties zijn op
+            Gewoon een afstandsboodschap!
+          </p>
+          <a href="./contacts.html" rel="noreferrer noopener" class="finder-link">Alle hotels</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <span class="subtitle">Beoordelingen</span>
+        <h2 class="main-title">Opmerkingen van onze gasten</h2>
+        <ul class="comments-list">
+          <li>
+            <div class="comments-thumb">
+              <img src="./img/user-1.png" alt="Anastasia Marynec" class="comments-img" />
+              <h3>Sofie Jansen</h3>
+            </div>
+            <p class="main-text">
+              “Vores ophold på Hotel Wawel var fantastisk! Placeringen var perfekt, inden for gåafstand til de vigtigste
+              seværdigheder i Krakow. Personalet var utroligt venlige og hjælpsomme, og vores værelse var rent og
+              komfortabelt. Morgenbuffeten var en stor oplevelse med et bredt udvalg af lækre retter. Jeg kan varmt
+              anbefale det!”
+            </p>
+
+          </li>
+          <li>
+            <div class="comments-thumb">
+              <img src="./img/user-2.png" alt="Maria Kowalczyk" class="comments-img" />
+              <h3>Lars de Vries</h3>
+            </div>
+            <p class="main-text">
+              “Sofitel Warsaw Victoria overgik vores forventninger! Den elegante indretning og de luksuriøse faciliteter
+              gjorde vores besøg uforglemmeligt. Spa-faciliteterne var i topklasse, og vi nød virkelig måltiderne på
+              hotellets restaurant. Hotellet ligger centralt, hvilket gjorde det nemt at udforske byen. En ægte
+              5-stjernet oplevelse!”
+            </p>
+
+          </li>
+          <li>
+            <div class="comments-thumb">
+              <img src="./img/user-3.png" alt="Vladyslav Nowak" class="comments-img" />
+              <h3>Emma van den Berg</h3>
+            </div>
+            <p class="main-text">
+              “Vi havde en vidunderlig oplevelse på Grand Hotel Tiffi. Hotellet er smukt designet og byder på
+              spektakulær udsigt over den omkringliggende natur. Personalet var imødekommende og venlige, hvilket gjorde
+              vores ophold meget behageligt. Wellness-centret var den perfekte måde at slappe af efter en dag med
+              sightseeing. Vi kommer helt sikkert tilbage!”
+            </p>
+
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <h2 class="footer-title">placeforrest</h2>
+      <nav>
+        <ul class="footer-nav-list">
+          <li>
+            <p class="footer-nav-text">Nuttige links</p>
+            <a href="#hot-deals" class="footer-nav-link">Hotels</a>
+          </li>
+          <li>
+            <p class="footer-nav-text">Privacy</p>
+            <ul>
+              <li>
+                <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookie
+                  File Policy</a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">Privacybeleid</a>
+              </li>
+              <li>
+                <a href="./terms.html" rel="noreferrer noopener" class="footer-nav-link">Regels en voorwaarden</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="footer-nav-text">Heeft u nog vragen?</p>
+            <ul>
+              <li>
+                <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookiesbeleid
+                </a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">
+                  Privacybeleid</a>
+              </li>
+              <li>
+                <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Statuut</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="footer-text-list">
+        <li>
+          <p>Madison Salen 101</p>
+        </li>
+        <li>
+          <address>427 S Margrietstraat 1 155, Den Haag</address>
+        </li>
+        <li>
+          <a href="tel:+31702001234">+31 70 200 12 34</a>
+        </li>
+        <li>
+          <a href="mailto:info@placeforrest.nl">info@placeforrest.nl</a>
+        </li>
+      </ul>
+
+      <ul class="footer-icon-list">
+        <li class="footer-icon-item">
+          <p class="footer-thumb">+18</p>
+        </li>
+        <li class="footer-icon-item">
+          <a href="https://www.gamcare.org.uk/" rel="noreferrer noopener"><img src="./img/footer-link.webp"
+              alt="logo gamcare" /></a>
+        </li>
+        <li class="footer-icon-item">
+          <a href="https://www.gambleaware.org/" rel="noreferrer noopener"><img src="./img/BeGamble.webp"
+              alt="logo gambleaware" /></a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Copyright © 2024 Alle Copyright © 2024 Alle rechten voorbehouden
+      </p>
+    </div>
+  </footer>
+
+
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="mobile-menu-wrapper">
+      <a href="./" class="mob-link link">placeforrest</a>
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg width="24" height="24">
+          <use href="./img/mob-menu-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav>
+      <ul class="footer-nav-list">
+        <li>
+          <p class="footer-nav-text mob-text">Nuttige links</p>
+          <a href="#hot-deals" class="footer-nav-link">Hotels</a>
+        </li>
+        <li>
+          <p class="footer-nav-text mob-text">Privacy</p>
+          <ul>
+            <li>
+              <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookie File
+                Policy</a>
+            </li>
+            <li>
+              <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">Privacybeleid</a>
+            </li>
+            <li>
+              <a href="./terms.html" rel="noreferrer noopener" class="footer-nav-link">Regels
+                en voorwaarden</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="footer-nav-text mob-text">Heeft u nog vragen?</p>
+          <ul>
+            <li>
+              <a href="./cookie-page.html" rel="noreferrer noopener" class="footer-nav-link">Cookiesbeleid
+              </a>
+            </li>
+            <li>
+              <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">contact</a>
+            </li>
+            <li>
+              <a href="./privacy-policy.html" rel="noreferrer noopener" class="footer-nav-link">
+                Privacybeleid</a>
+            </li>
+            <li>
+              <a href="./contacts.html" rel="noreferrer noopener" class="footer-nav-link">Statuut</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/hotel.js"></script>
+  <script src="./js/gallery.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

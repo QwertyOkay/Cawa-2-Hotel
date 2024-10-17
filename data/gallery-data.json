@@ -1,0 +1,20 @@
+{
+  "gallery": [
+    {
+      "src": "../img/gallery-img1.jpg",
+      "alt": "Kamer met uitzicht op zee en balkon, groot bed en moderne decoratie"
+    },
+    {
+      "src": "../img/gallery-img2.jpg",
+      "alt": "Modern kantoor met uitzicht op de stad en elegante decoratie"
+    },
+    {
+      "src": "../img/gallery-img3.jpg",
+      "alt": "Luxe hotelkamer met uitzicht op de stad en kingsize bed"
+    },
+    {
+      "src": "../img/gallery-img4.jpg",
+      "alt": "Buitenzwembad met uitzicht op de stadshorizon en strandstoelen"
+    }
+  ]
+}
